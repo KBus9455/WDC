@@ -16,106 +16,112 @@
 <body>
     <header>
         <div class="Logo">
-            <img src="C:\Users\Kasia\Desktop\Nowy folder\1-20190823T104357Z-001\1\Projekt\fotos\2logotop.png"
-                alt="LogoTop">
+            <img src="fotos/2logotop.png" alt="LogoTop">
         </div>
         <div class="LogoName"></div>
     </header>
     <main>
         <div class="window">
-
             <h1>Register Form</h1>
-
             <div class="FormBorder">
-                <div class="Form">
-                    <form>
-                        <div class="inputContainer">
-                            <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Username">
-                        </div>
-                        <div class="inputContainer">
-                            <i class="fas fa-unlock-alt"></i><input type="text" placeholder="Password">
-                        </div>
-                        <div class="inputContainer">
-                            <i class="fas fa-unlock-alt"></i><input type="text" placeholder="Confirm password">
-                        </div>
-                        <div class="inputContainer"><i class="fas fa-envelope"></i>
-                            <input type="text" placeholder="Email">
-                        </div>
-                        <div class="inputContainer">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <input type="text" placeholder="Your Location" placeholder="Your Location"
-                                list="continents">
-                            <datalist id="continents">
-                                <option value="Africa">
-                                <option value="Antarctica">
-                                <option value="Asia">
-                                <option value="Australia">
-                                <option value="Europe">
-                                <option value="North America">
-                                <option value="South America">
-                            </datalist>
-                        </div>
-                        <div class="checkboxContainer"><input type="checkbox" name="agreement" id="agreement"> <label
-                                for="agrrement"> I have read
-                                and accept the terms of use</label>
-                        </div>
-                        <div class="buttonContainer">
-                            <button>Sing up</button>
-                        </div>
-                    </form>
-                </div>
+                <section>
+                    <div class="inputContainer">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="inputContainer">
+                        <i class="fas fa-unlock-alt"></i><input type="text" placeholder="Password">
+                    </div>
+                    <div class="inputContainer">
+                        <i class="fas fa-unlock-alt"></i><input type="text" placeholder="Confirm password">
+                    </div>
+                    <div class="inputContainer"><i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="inputContainer">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Your Location" placeholder="Your Location" list="continents">
+                        <datalist id="continents">
+                            <option value="Africa">
+                            <option value="Antarctica">
+                            <option value="Asia">
+                            <option value="Australia">
+                            <option value="Europe">
+                            <option value="North America">
+                            <option value="South America">
+                        </datalist>
+                    </div>
+                    <div class="checkboxContainer"><input type="checkbox" name="agreement" id="agreement"> <label
+                            for="agrrement"> I have read
+                            and accept the terms of use</label>
+                    </div>
+                    <div class="buttonContainer">
+                        <button>Sing up</button>
+                    </div>
+                </section>
             </div>
         </div>
         </div>
         <div class="window">
             <h1>Send Email</h1>
             <div class="FormBorder">
-                <div class="Form">
-                    <form>
-                        <div class="inputWithIcon inputIconBorder">
-                            <i class="fas fa-user"></i><input type="text" placeholder="Username">
+                <section>
+                    <div class="inputContainer">
+                        <i class="fas fa-user"></i><input type="text" placeholder="Username">
+                    </div>
+                    <div class="inputContainer">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="textareaContainer">
+                        <textarea placeholder="Type your message"></textarea>
+                    </div>
+                    <div>
+                        <div class="checkboxContainer"><input type="checkbox" name="agreement" id="agreement"> <label
+                                for="agrrement">Send a copy to my Email</label>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Your Email">
-                            <textarea placeholder="Type your message"></textarea>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                            <p>Send a copy to my Email</p>
-                        </div>
-                        <div class="buttons">
+                        <div class="buttonContainer">
                             <button>Sing In</button>
                         </div>
-                    </form>
-                </div>
+                </section>
             </div>
         </div>
         <div class="window">
             <h1>Sing In Form</h1>
             <div class="FormBorder">
-                <div class="Form">
-                    <form>
-                        <input type="text" placeholder="Username">
+                <section>
+                    <div class="inputContainer">
+                        <i class="fas fa-user"></i><input type="text" placeholder="Username">
+                    </div>
+                    <div class="inputContainer">
                         <input type="text" placeholder="Password">
-                        <input type="checkbox">
-                        <p>Remember me</p>
+                    </div>
+                    <div class="checkboxContainer"><input type="checkbox" name="agreement" id="agreement"> <label
+                            for="agrrement">Remember me</label>
+                    </div>
+                    <div class="buttonContainer">
                         <button>Send Email</button>
-                    </form>
-                </div>
+                    </div>
+                </section>
             </div>
         </div>
 
         <div class="window">
             <h1>Recover From</h1>
-            <div class="Form">
-                <form>
-                    <input type="text" placeholder="Enter Your Email">
-                    <input type="text" placeholder="Enter Your Phone Number">
+            <div class="FormBorder">
+                <section>
+                    <div class="inputContainer">
+                        <input type="text" placeholder="Enter Your Email">
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" placeholder="Enter Your Phone Number">
+                    </div>
+                    <div class="buttonContainer"></div>
                     <button>Send </button>
                     <button>Done</button>
-                </form>
+                </section>
             </div>
+        </div>
         </div>
         <div class="window">
             <h1>Subscribe Form</h1>
