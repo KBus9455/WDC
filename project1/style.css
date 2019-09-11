@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1050px;
+    background-image: url("fotos/1.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+div.Logo {
+    text-align: center;
+    max-width: 320px;
+}
+
+img {
+    max-width: 100vw;
+}
+
+header {
+    height: 20%;
+}
+
+main {
+    height: 80%;
+    width: 100vw;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30%;
+    margin-bottom: 30px;
+
+}
+
+form {
+
+    background-color: #fff;
+}
+
+.FormBorder {
+    background-color: rgba(0, 0, 0, 0.185);
+    padding: 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+
+.inputContainer {
+    position: relative;
+    text-align: center;
+    margin: 12px 0;
+}
+
+
+
+.inputContainer i {
+    position: absolute;
+    left: 13px;
+    top: 0px;
+    padding: 8px 10px;
+    color: rgba(170, 170, 170, 0.575);
+    text-align: center;
+    border-right: solid rgba(170, 170, 170, 0.3) 2px;
+}
+
+input {
+    color: rgba(170, 170, 170, 0.3);
+    line-height: 30px;
+    border-radius: 4px;
+    text-indent: 5px;
+    width: 90%;
+    padding-left: 30px;
+    border: solid rgba(170, 170, 170, 0.3) 2px;
+}
+
+.checkboxContainer {
+    color: rgba(170, 170, 170, 0.8);
+    padding: 5px;
+    margin: 5px auto;
+    line-height: 20px;
+    border-radius: 4px;
+    width: 90%;
+    font-family: "Titillium Web", sans-serif;
+}
+
+#agreement {
+    width: 10px;
+}
+
+h1 {
+    font-family: "Titillium Web", sans-serif;
+    line-height: 20px;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px #000;
+    font-weight: 300;
+}
+
+label {
+    font-family: "Titillium Web", sans-serif;
+}
+
+button {
+    font-size: 10px;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 5%;
+    background: linear-gradient(rgb(119, 238, 39), rgba(85, 192, 43, 1));
+    height: 30px;
+    width: 40%;
+    margin: 10px auto;
+    color: white;
+    border: 1px solid green;
+}
