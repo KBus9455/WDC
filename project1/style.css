@@ -37,11 +37,9 @@ main {
 .window {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     height: 30%;
     margin-bottom: 30px;
-
 }
 
 section {
@@ -52,6 +50,7 @@ section {
 .FormBorder {
     background-color: rgba(0, 0, 0, 0.185);
     padding: 15px;
+    margin: 4px;
 }
 
 .inputContainer {
@@ -67,7 +66,7 @@ section {
     padding: 8px 10px;
     color: rgba(170, 170, 170, 0.575);
     text-align: center;
-    border-right: solid rgba(170, 170, 170, 0.3) 2px;
+    border-right: solid rgba(170, 170, 170, 0.87) 1px;
 }
 
 input {
@@ -77,7 +76,7 @@ input {
     text-indent: 5px;
     width: 90%;
     padding-left: 30px;
-    border: solid rgba(170, 170, 170, 0.3) 2px;
+    border: solid rgba(170, 170, 170, 0.87) 1px;
 }
 
 .checkboxContainer {
@@ -103,6 +102,7 @@ h1 {
     margin-top: 10px;
     text-shadow: 2px 2px 5px #000;
     font-weight: 300;
+    text-align: center;
 }
 
 label {
@@ -110,7 +110,12 @@ label {
 }
 
 .buttonContainer {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonContainer span {
+    width: 40px;
 }
 
 button {
