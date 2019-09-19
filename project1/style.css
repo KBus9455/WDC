@@ -16,17 +16,14 @@ body {
     background-position: center;
 }
 
-.Logo {
+.Logo,
+img {
     text-align: center;
-
+    max-width: 100vw;
 }
 
 i {
     max-width: 33px;
-}
-
-img {
-    max-width: 100vw;
 }
 
 header {
@@ -36,20 +33,23 @@ header {
 main {
     height: 80%;
     width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
+
 
 .window {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30%;
     margin-bottom: 30px;
 }
 
 section {
     background-color: #fff;
     padding-top: 1px;
-    min-width: 300px;
+    width: 250px;
 }
 
 .FormBorder {
@@ -171,8 +171,12 @@ textarea {
 
 @media (min-width: 375px) {
     .inputContainer i {
-        left: 15px;
+        left: 12px;
         font-size: 16px;
+    }
+
+    section {
+        width: 300px;
     }
 }
 
@@ -186,7 +190,7 @@ textarea {
     }
 
     .inputContainer i {
-        left: 15px;
+        left: 12px;
         font-size: 16px;
     }
 }
