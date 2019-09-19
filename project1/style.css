@@ -16,9 +16,13 @@ body {
     background-position: center;
 }
 
-div.Logo {
+.Logo {
     text-align: center;
-    max-width: 320px;
+
+}
+
+i {
+    max-width: 33px;
 }
 
 img {
@@ -37,7 +41,7 @@ main {
 .window {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
     height: 30%;
     margin-bottom: 30px;
 }
@@ -45,6 +49,7 @@ main {
 section {
     background-color: #fff;
     padding-top: 1px;
+    min-width: 300px;
 }
 
 .FormBorder {
@@ -61,7 +66,7 @@ section {
 
 .inputContainer i {
     position: absolute;
-    left: 13px;
+    left: 11px;
     top: 0px;
     padding: 8px 10px;
     color: rgba(170, 170, 170, 0.575);
@@ -74,6 +79,7 @@ input {
     line-height: 30px;
     border-radius: 4px;
     text-indent: 5px;
+    font-family: "Titillium Web", sans-serif;
     width: 90%;
     padding-left: 30px;
     border: solid rgba(170, 170, 170, 0.87) 1px;
@@ -133,16 +139,143 @@ button {
     margin-bottom: 15px;
 }
 
+.buttonContainer button:nth-child(1) {
+    margin-left: 15px;
+}
+
+.buttonContainer button:nth-last-child(1) {
+    margin-right: 15px;
+}
+
 .textareaContainer {
     text-align: center;
     color: rgba(170, 170, 170, 0.8);
     margin: 5px auto;
 
+
 }
 
 textarea {
+    font-family: "Titillium Web", sans-serif;
     border-radius: 4px;
     width: 90%;
     height: 100px;
     border: solid rgba(170, 170, 170, 0.3) 2px;
+}
+
+@media (min-width: 360px) {
+    .window {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 375px) {
+    .inputContainer i {
+        left: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 411px) {
+
+    input,
+    textarea,
+    label,
+    button {
+        font-size: 17px;
+    }
+
+    .inputContainer i {
+        left: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch;
+        max-height: 1024px;
+    }
+
+    .window {
+        max-width: 95%;
+    }
+
+    section {
+        width: 300px;
+    }
+
+    img {
+        max-width: 80%;
+    }
+
+    .inputContainer i {
+        left: 15px;
+        font-size: 18px;
+    }
+
+    input,
+    textarea,
+    label,
+    button {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-repeat: no-repeat;
+    }
+
+    main {
+        max-height: 1200px;
+    }
+
+    section {
+        width: 350px;
+    }
+
+    input,
+    textarea,
+    label,
+    button {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .inputContainer {
+        margin: 18px 0;
+    }
+
+    button {
+        height: 60px;
+        line-height: 40px;
+        margin-bottom: 18px;
+    }
+
+    .buttonContainer button:nth-child(1) {
+        margin-left: 18px;
+    }
+
+    .buttonContainer button:nth-last-child(1) {
+        margin-right: 18px
+    }
+}
+
+
+@media (min-width: 320px) and (orientation: landscape) {
+    section {
+        width: 350px;
+    }
+}
+
+@media (min-width: 812px) and (orientation: landscape) {
+    .inputContainer i {
+        padding: 7px 10px;
+
+    }
 }
