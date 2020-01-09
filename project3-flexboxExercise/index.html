@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Flexboc layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+            background-color: #ddd;
+            flex-direction: column;
+            font-family: sans-serif;
+            font-size: 12px;
+            align-items: center;
+        }
+
+        nav {
+            background-color: #000;
+            color: white;
+            padding: 10px;
+            align-self: stretch;
+        }
+
+        header {
+            background-color: purple;
+            flex-basis: 30vh;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        section {
+            display: flex;
+            flex-grow: 1;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        main {
+            background-color: red;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        aside {
+            flex-basis: 300px;
+            background-color: cadetblue;
+        }
+
+        footer {
+            padding: 10px;
+            align-self: center;
+        }
+
+        @media (max-width: 1024px) {
+            header {
+                order: -1;
+            }
+
+            aside {
+                flex-basis: 100%;
+            }
+
+            section {
+                flex-wrap: wrap;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>Nawigacja</nav>
+        <header>HEADER</header>
+        <section>
+            <main>Kontent</main>
+            <aside>Boczne</aside>
+        </section>
+        <footer>Stopka Copywrite by K.Zych5050</footer>
+    </div>
+</body>
+
+</html>
